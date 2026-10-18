@@ -499,6 +499,31 @@
         letter-spacing: 0.06em;
         font-weight: 300;
       }
+
+      .creator-credit {
+        position: fixed;
+        top: max(10px, env(safe-area-inset-top, 0px));
+        right: 12px;
+        z-index: 10000;
+        padding: 5px 9px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.88);
+        color: #111;
+        font: 600 11px/1.2 var(--sans);
+        letter-spacing: 0.02em;
+        pointer-events: none;
+        user-select: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+      }
+      @media (max-width: 480px) {
+        .creator-credit {
+          top: max(8px, env(safe-area-inset-top, 0px));
+          right: 8px;
+          padding: 4px 7px;
+          font-size: 10px;
+        }
+      }
     </style>
   </head>
   <body>
